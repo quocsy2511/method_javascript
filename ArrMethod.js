@@ -1,4 +1,3 @@
-
 // ============================================================= Array Method =============================================================
 
 let arrNumber = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -32,10 +31,15 @@ const methodSort = arrNumber2.sort((a, b) => {
 // nối mảng
 const methodConcat = arrNumber.concat(arrNumber2);
 
+// lấy ra vị trí của phần tử trong mảng
+let arrNumber4 = [1, 3, 4, 5, 2];
+const indexValue = arrNumber4.indexOf(5);
+
 // ============ Destructuring array
 
 // nối mảng
-const spread = [...arrNumber, ...arrNumber2];
+const spread = [...arrNumber];
+const spread2 = [...arrNumber, ...arrNumber2];
 
 // ============ Rest parameter
 
@@ -57,6 +61,9 @@ const methodEvery = arrNumber.every((item) => {
 
 //Dùng để kiểm tra xem trong mảng có chứa phần tử này không
 const methodIncludes = arrNumber.includes(5);
+
+//kiểm tra có phải là mảng không
+const isArray = Array.isArray(arrNumber);
 
 ///============ hàm lọc mảng ============
 
